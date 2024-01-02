@@ -5,6 +5,7 @@ import 'package:flutter_getx_base/shared/widgets/custom_bottom_navigation_bar.da
 import 'package:get/get.dart';
 
 import '../../shared/constants/colors.dart';
+import '../home/home_screen.dart';
 import 'home_controller.dart';
 
 class HomeScreen extends GetView<HomeController> {
@@ -81,7 +82,7 @@ class HomeScreen extends GetView<HomeController> {
 
   List<Widget> _widgetOptions() {
     return [
-      Center(child: Text("Screen 1")),
+      HomeItemScreen(),
       Center(child: Text("Screen 2")),
       Center(child: Text("Screen 3")),
       Center(child: Text("Screen 4")),
