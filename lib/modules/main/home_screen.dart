@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_base/app_controller.dart';
+import 'package:flutter_getx_base/modules/setting/setting.dart';
 import 'package:flutter_getx_base/shared/constants/common.dart';
 import 'package:flutter_getx_base/shared/widgets/custom_bottom_navigation_bar.dart';
 import 'package:get/get.dart';
 
 import '../../shared/constants/colors.dart';
+import '../category/category_screen.dart';
 import '../home/home_screen.dart';
 import 'home_controller.dart';
 
@@ -61,13 +63,13 @@ class HomeScreen extends GetView<HomeController> {
             iconData: controller.bottomNavIndex.value == 1
                 ? controller.bottomNavSelectedIconPaths[1]
                 : controller.imagePaths[1],
-            text: CommonConstants.event.tr,
+            text: "Categories".tr,
           ),
           BottomBarItem(
             iconData: controller.bottomNavIndex.value == 2
                 ? controller.bottomNavSelectedIconPaths[2]
                 : controller.imagePaths[2],
-            text: CommonConstants.reward.tr,
+            text: "Favourite".tr,
           ),
           BottomBarItem(
             iconData: controller.bottomNavIndex.value == 3
@@ -83,9 +85,9 @@ class HomeScreen extends GetView<HomeController> {
   List<Widget> _widgetOptions() {
     return [
       HomeItemScreen(),
-      Center(child: Text("Screen 2")),
+      CategoryScreen(),
       Center(child: Text("Screen 3")),
-      Center(child: Text("Screen 4")),
+      SettingScreen(),
     ];
   }
 }

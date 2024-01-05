@@ -1,4 +1,4 @@
-package com.example.flutter_getx_base
+package lamdv2.flutter_getx.ebooks
 
 import io.flutter.embedding.android.FlutterActivity
 

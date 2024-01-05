@@ -140,6 +140,8 @@ class DetailsScreen extends StatelessWidget {
                                     child: RoundedButton(
                                       text: "Read",
                                       verticalPadding: 10,
+                                      horizontalPadding: 2,
+                                      
                                     ),
                                   ),
                                 ],

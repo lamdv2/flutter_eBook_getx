@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class RoundedButton extends StatelessWidget {
   final String text;
   final Function()? press;
-  final double verticalPadding;
-  final double horizontalPadding;
-  final double fontSize;
+  final double? verticalPadding;
+  final double? horizontalPadding;
+  final double? fontSize;
 
   RoundedButton({
     Key? key,
@@ -25,7 +25,9 @@ class RoundedButton extends StatelessWidget {
         alignment: Alignment.center,
         margin: EdgeInsets.symmetric(vertical: 16),
         padding: EdgeInsets.symmetric(
-            vertical: verticalPadding, horizontal: horizontalPadding),
+          vertical: verticalPadding ?? 16,
+          horizontal: horizontalPadding ?? 16,
+        ),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(30),

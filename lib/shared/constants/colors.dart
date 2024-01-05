@@ -40,6 +40,42 @@ class ColorConstants {
   static const Color lightGreenColor = Color(0xFF94E059);
   static const Color orangeColor = Color(0xFFFF5630);
   static const Color lightBlueColor = Color(0xFF5C9CE4);
+
+  static const Color botTitle = Color(0xFF313131);
+  static const Color graySecond = Color(0xFF878787);
+  static const Color titleSearch = Color(0xFF636363);
+  static const Color blue = Color(0xFF2185D5);
+  static const Color blueSecond = Color(0xFF237CEF);
+  static const Color gray = Color(0xFFD0D0D0);
+
+  // Gray
+  static const Color gray100 = Color(0XFFF6F6F6);
+  static const Color gray200 = Color(0XFF4E4B66);
+  static const Color gray300 = Color(0XFFE6E6E6);
+  static const Color gray400 = Color(0XFFBFBFBF);
+  static const Color gray500 = Color(0XFF999999);
+  static const Color gray600 = Color(0XFF737373);
+  static const Color gray700 = Color(0xFFF7F7F7);
+
+  // Light theme
+  // Status bar
+  static const Color lightStatusBar = Color(0xFFE0E0E0);
+  // App bar
+  static const Color lightAppBar = Color(0xFFF5F5F5);
+  // Background
+  static const Color lightBackground = Color(0xFFF5F5F5);
+  // Cards
+  static Color? lightCard = white;
+
+  // Dark theme
+  // Status bar
+  static Color darkStatusBar = black;
+  // App bar
+  static const Color darkAppBar = Color(0xFF212121);
+  // Background
+  static const Color darkBackground = Color(0xFF303030);
+  // Cards
+  static const Color darkCard = Color(0xFF424242);
 }
 
 Color hexToColor(String hex) {
