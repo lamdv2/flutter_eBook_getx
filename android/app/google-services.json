@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "23212582912",
+    "project_id": "flutter-ebooks",
+    "storage_bucket": "flutter-ebooks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23212582912:android:62a6b36f6700a50514d0e5",
+        "android_client_info": {
+          "package_name": "lamdv2.flutter_getx.ebooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23212582912-2smkji4926vit6i8k06ok53high6f199.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lamdv2.flutter_getx.ebooks",
+            "certificate_hash": "64b0c8a60c34d610bbc04b446590ae1f0f2a968e"
+          }
+        },
+        {
+          "client_id": "23212582912-gr5t6kamnfbgf8ak7fd6aavccnipccud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGFRmm5otURUTA7OgB5WYpsE2NGfUDVJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23212582912-gr5t6kamnfbgf8ak7fd6aavccnipccud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

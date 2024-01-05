@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="your.package.name">
+    package="lamdv2.flutter_getx.ebooks">
     <application
         android:label="EBook"
         android:name="${applicationName}"

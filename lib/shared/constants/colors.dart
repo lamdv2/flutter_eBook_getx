@@ -57,13 +57,15 @@ class ColorConstants {
   static const Color gray600 = Color(0XFF737373);
   static const Color gray700 = Color(0xFFF7F7F7);
 
+  static const Color borderGray = Color(0xFFE7E7E7);
+
   // Light theme
   // Status bar
   static const Color lightStatusBar = Color(0xFFE0E0E0);
   // App bar
   static const Color lightAppBar = Color(0xFFF5F5F5);
   // Background
-  static const Color lightBackground = Color(0xFFF5F5F5);
+  static const Color lightBackground = Color(0xFFF7F7F7);
   // Cards
   static Color? lightCard = white;
 

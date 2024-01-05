@@ -36,17 +36,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: backgroundColor ?? ColorConstants.lightBlueColor,
+      backgroundColor: backgroundColor ?? ColorConstants.lightBackground,
       leading: leading ??
           Padding(
             padding: const EdgeInsets.only(
               left: 18,
-              top: 9,
-              bottom: 9,
+              top: 8,
+              bottom: 8,
             ),
             child: InkWell(
               onTap: onTap != null ? () => onTap!() : () => Get.back(),
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(20),
               child: Padding(
                 padding: const EdgeInsets.only(
                   left: 2,
@@ -57,9 +57,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 child: Container(
                   padding: EdgeInsets.all(getSize(8)),
                   decoration: BoxDecoration(
-                    color: ColorConstants.lightBlueColor.withOpacity(.1),
+                    border: Border.all(color: ColorConstants.borderGray),
                     borderRadius: const BorderRadius.all(
-                      Radius.circular(8),
+                      Radius.circular(68),
                     ),
                   ),
                   child: SvgPicture.asset(
@@ -78,7 +78,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         titles ?? '',
         overflow: TextOverflow.ellipsis,
         textAlign: TextAlign.center,
-        style: AppStyles.white000Size20Fw500FfMont,
+        style: AppStyles.black000Size20Fw500FfMont,
       ),
       centerTitle: true,
       elevation: 0,
