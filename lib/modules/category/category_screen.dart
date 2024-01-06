@@ -25,7 +25,7 @@ class CategoryScreen extends GetView<CategoryController> {
               crossAxisSpacing: 8.0,
               mainAxisSpacing: 8.0,
             ),
-            itemCount: controller.listBookCategory.length,
+            itemCount: controller.listCategory.value?.length ?? 0,
             itemBuilder: (context, index) {
               return GridItem(item: controller.listBookCategory[index]);
             },

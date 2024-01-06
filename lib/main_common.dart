@@ -1,5 +1,6 @@
 // ignore_for_file: unused_field, unused_element, unused_local_variable
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_getx_base/app_controller.dart';
@@ -16,6 +17,7 @@ final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 Future<void> mainCommon(AppFlavor flavor) async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
   await Future.wait([
     DenpendencyInjection.init(),

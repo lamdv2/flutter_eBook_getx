@@ -1,10 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_getx_base/models/categories/category_model.dart';
 import 'package:get/get.dart';
 
 class CategoryController extends GetxController {
-   @override
+  @override
   void onInit() {
     super.onInit();
+
+    getCategory();
 
     for (var i = 0; i < genres.length; i++) {
       for (var j = 1; j <= 3; j++) {
@@ -18,6 +21,7 @@ class CategoryController extends GetxController {
 
   final _db = FirebaseFirestore.instance;
   final List<Map<String, String>> listBookCategory = [];
+  final Rxn<List<CategoryModel>> listCategory = Rxn([]);
 
   final List<String> genres = [
     'History',
@@ -38,13 +42,12 @@ class CategoryController extends GetxController {
     'Cooking',
   ];
 
- 
-
   Future<void> getCategory() async {
-    final snapShot = await _db
-        .collection('Categorys')
-        // .where('email', isEqualTo: email)
-        .get();
+    final snapShot = await _db.collection('Categorys').get();
+    if (snapShot.docs.isNotEmpty) {
+      listCategory.value =
+          snapShot.docs.map((e) => CategoryModel.fromJson(e)).toList();
+    }
   }
 
   Future<void> getUserDetails(String email) async {
